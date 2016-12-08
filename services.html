@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
-    <meta charset ="utf-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+    <link rel="stylesheet" href="styles/first-stylesheet.css">
+    <link rel="stylesheet" href="styles/grid-layout.css">
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
   </head>
   <body>
    <article>
      <header>
-       <h1>Services</h1>
        <img src="images/logo.jpg" alt="STP Logo">
-        <nav>
-          <!--Different from Sketch, Added a 'Home' to the navigation-->
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-            <ul>
-              <li>Instructors</li>
-              <li>Clients</li>
-            </ul>
-          <a href="services.html">Services</a>
-            <ul>
-              <li>Classes</li>
-              <li>Private Lessons</li>
-            </ul>
-         <a href="#">Policy</a>
-       </nav>
+       <h1>Services</h1>
+        <nav class="col-4">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="services.html">Services</a></li>
+           <li><a href="#">Policy</a></li>
+         </ul>
+        </nav>
      </header>
     <p>Straight To The Point Archery offers lessons in two different methods, either through monthly classes or private lesson packages.</p>
     
     <h2>Choose a service:</h2>
-       <!--these will lead the user to two different pages for each type-->
-        <ul>
-          <li>
-            <a href="#">Classes</a>
-            <img src="images/class1.jpg" alt="Class 1">
-          </li>
-          <li>
-            <a href="#">Private Lessons</a>
-            <img src="images/lesson2.jpg" alt="Lesson">
-          </li>
-        </ul>
+     <!--small grid-->
+       <div class="row">
+         <div class="col-6">
+           <ul class = "services">
+             <li>
+              <a href="#">Classes</a>
+              <img src="images/class1.jpg" alt ="Classes">
+             </li>
+             <li>
+              <a href="#">Private Lessons</a>
+              <img src="images/lesson2.jpg" alt ="Lessons">
+             </li>
+           </ul>
+         </div>
+       </div>
+
+       
    </article>
   
   <footer>
